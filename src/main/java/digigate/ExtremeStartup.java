@@ -1,4 +1,5 @@
 package digigate;
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -6,9 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import digigate.requesthandlers.NameRequestHandler;
-import digigate.requesthandlers.RequestHandler;
-import digigate.requesthandlers.SumRequestHandler;
+import digigate.requesthandlers.*;
 
 public class ExtremeStartup extends HttpServlet 
 {
@@ -16,7 +15,11 @@ public class ExtremeStartup extends HttpServlet
 	
 	private RequestHandler[] requestHandlers = new RequestHandler[] {
 		new NameRequestHandler(),
-		new SumRequestHandler()
+		new SumRequestHandler(),
+		new LargestNumberHandler(),
+		new MultiplyRequestHandler(),
+		new SquareCubeRequestHandler(),
+		new TriviaRequestHandler()
 	};
 
     @Override
