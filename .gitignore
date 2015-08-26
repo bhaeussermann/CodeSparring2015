@@ -1,0 +1,14 @@
+*target*
+*.jar
+*.war
+*.class
+
+# eclipse
+.project
+.metadata
+bin/**
+tmp/**
+*.tmp
+.classpath
+.settings/
+.loadpath
